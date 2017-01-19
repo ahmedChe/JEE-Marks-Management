@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 mai 2016 12:25:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Entities.Niveau" table="niveau" catalog="ejb" optimistic-lock="version">
+        <id name="codeNiv" type="java.lang.Integer">
+            <column name="Code_niv" />
+            <generator class="identity" />
+        </id>
+        <property name="nomNiv" type="string">
+            <column name="Nom_niv" length="35" not-null="true" />
+        </property>
+        <property name="nombreGrp" type="int">
+            <column name="Nombre_grp" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

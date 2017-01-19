@@ -1,0 +1,18 @@
+SMAP
+Administration_jsp.java
+JSP
+*S JSP
+*F
++ 0 Administration.jsp
+Administration.jsp
++ 1 EnteteAdmin.html
+EnteteAdmin.html
++ 2 Footer.html
+Footer.html
+*L
+5,6:50
+1#1,193:56
+10#0,6:248
+1#2,320:254
+15#0,2:573
+*E

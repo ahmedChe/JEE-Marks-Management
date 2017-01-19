@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 mai 2016 12:25:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Entities.Compostage" table="compostage" catalog="ejb" optimistic-lock="version">
+        <id name="codeCompostage" type="java.lang.Integer">
+            <column name="Code_compostage" />
+            <generator class="identity" />
+        </id>
+        <property name="numeroCompostage" type="int">
+            <column name="Numero_compostage" not-null="true" />
+        </property>
+        <property name="codeNote" type="int">
+            <column name="Code_note" not-null="true" />
+        </property>
+        <property name="note" type="float">
+            <column name="Note" precision="12" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

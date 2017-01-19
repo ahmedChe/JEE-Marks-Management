@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 mai 2016 12:25:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Entities.Matiere" table="matiere" catalog="ejb" optimistic-lock="version">
+        <id name="codeMat" type="java.lang.Integer">
+            <column name="Code_Mat" />
+            <generator class="identity" />
+        </id>
+        <property name="libelle" type="string">
+            <column name="Libelle" length="25" not-null="true" />
+        </property>
+        <property name="volumeC" type="float">
+            <column name="VolumeC" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="volumeTd" type="float">
+            <column name="VolumeTD" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="volumeTp" type="float">
+            <column name="VolumeTP" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="coeffecient" type="float">
+            <column name="Coeffecient" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="credit" type="float">
+            <column name="Credit" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="enseignant" type="int">
+            <column name="Enseignant" not-null="true" />
+        </property>
+        <property name="groupe" type="int">
+            <column name="Groupe" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

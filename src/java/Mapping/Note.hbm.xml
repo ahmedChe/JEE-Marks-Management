@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 mai 2016 12:25:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Entities.Note" table="note" catalog="ejb" optimistic-lock="version">
+        <id name="code" type="java.lang.Integer">
+            <column name="code" />
+            <generator class="identity" />
+        </id>
+        <property name="noteTp" type="float">
+            <column name="noteTP" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="noteDs" type="float">
+            <column name="noteDS" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="noteExamen" type="float">
+            <column name="noteExamen" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="notePresentielle" type="double">
+            <column name="notePresentielle" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="matiere" type="int">
+            <column name="Matiere" not-null="true" />
+        </property>
+        <property name="etudiant" type="int">
+            <column name="Etudiant" not-null="true" />
+        </property>
+        <property name="session" type="int">
+            <column name="Session" not-null="true" />
+        </property>
+        <property name="validite" type="int">
+            <column name="Validite" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

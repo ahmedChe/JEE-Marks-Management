@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 mai 2016 12:25:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Entities.Etudiant" table="etudiant" catalog="ejb" optimistic-lock="version">
+        <id name="cin" type="int">
+            <column name="CIN" />
+            <generator class="assigned" />
+        </id>
+        <property name="numInscription" type="int">
+            <column name="Num_inscription" not-null="true" unique="true" />
+        </property>
+        <property name="nom" type="string">
+            <column name="Nom" length="20" not-null="true" />
+        </property>
+        <property name="prenom" type="string">
+            <column name="Prenom" length="20" not-null="true" />
+        </property>
+        <property name="adresse" type="string">
+            <column name="Adresse" length="85" not-null="true" />
+        </property>
+        <property name="tel" type="int">
+            <column name="Tel" not-null="true" />
+        </property>
+        <property name="codeUser" type="int">
+            <column name="Code_user" not-null="true" unique="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="35" not-null="true" />
+        </property>
+        <property name="groupe" type="int">
+            <column name="Groupe" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
